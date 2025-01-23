@@ -1,0 +1,12 @@
+// Program to find area of a square 
+#include <stdio.h>
+
+int main() {
+    
+    int side,area;
+    printf("enter side length:");
+    scanf("%d",&side);
+    area=side*side;
+    printf("The area is %d",area);
+    return 0;
+}
