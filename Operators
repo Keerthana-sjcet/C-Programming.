@@ -1,0 +1,36 @@
+ /* Description  :A C program, which takes two integer operands and one operator form the user, performs the operation and then prints the result using Switch Statement)
+ * Author       :   Keerthana G Pillai
+ * Version      :   1.0
+ * Date         :   26-01-2025
+*/
+#include <stdio.h>
+
+int main() {
+    int num1, num2;
+    char operand;
+    printf("Enter two numbers: ");
+    scanf("%d %d", &num1, &num2);
+    printf("Enter any one of +, -, *, /, %: ");
+    scanf(" %c", &operand); 
+    switch (operand) {
+        case '+':
+            printf(" %d\n", num1 + num2);
+            break;
+        case '-':
+            printf("%d\n", num1 - num2);
+            break;
+        case '*':
+            printf(" %d\n", num1 * num2);
+            break;
+        case '/':
+            printf("%d\n", num1 / num2);
+            break;
+        case '%':
+            printf(" %d\n", num1 % num2);
+            break;
+        default:
+            printf("Invalid");
+    }
+
+    return 0;
+}
