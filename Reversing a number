@@ -1,0 +1,29 @@
+/* Description  :   C Program to read the a number and reverse it
+
+ * Author       :   Keerthana G Pillai
+ * Version      :   1.0
+ * Date         :   27-01-2025
+*/
+
+
+
+#include <stdio.h>
+
+
+
+int main() {
+    int num, rem, revnum = 0;
+
+    printf("Enter a number: ");
+    scanf("%d", &num);
+
+    while (num > 0) {
+        rem = num % 10;
+        revnum = revnum*10+ rem;
+        num = num / 10;
+    }
+
+    printf("reversed number: %d\n", revnum);
+
+    return 0;
+}
