@@ -1,0 +1,21 @@
+
+ /* Description  :   C PROGRAM CHECK IF ENTERED YEAR IS A LEAP YEAR OR NOT
+ * Author       :   Keerthana G Pillai
+ * Version      :   1.0
+ * Date         :   28-01-2025
+*/
+#include <stdio.h>
+
+int main() {
+    int year;
+    printf("Enter year");
+    scanf("%d", &year);
+    if ((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0)) {
+        printf(" leap year\n");
+    }
+    else {
+        printf("Not a leap year.\n");
+    }
+
+    return 0;
+}
