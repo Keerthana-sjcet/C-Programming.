@@ -1,0 +1,25 @@
+
+ /* Description  :    If cost price and selling price of an item are input through the keyboard, write a  program to determine whether the seller has made profit or incurred loss. Also  determine how much profit he made or loss he incurred.
+ * Author       :   Keerthana G Pillai
+ * Version      :   1.0
+ * Date         :   28-01-2025
+*/
+
+#include <stdio.h>
+
+int main() {
+    int costPrice, sellingPrice;
+    printf("Enter cost price and selling price: ");
+    scanf("%d %d", &costPrice, &sellingPrice);
+    if (costPrice > sellingPrice) {
+        printf("Seller has incurred a loss of %d rupees. ", costPrice - sellingPrice);
+    } 
+    else if (sellingPrice > costPrice) {
+        printf("Seller has incurred a profit of %d rupees.", sellingPrice - costPrice);
+    } 
+    else {
+        printf("No profit, no loss.");
+    }
+
+    return 0;
+}
