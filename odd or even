@@ -1,0 +1,22 @@
+
+ /* Description  :   C Program to to find out whether a number is an odd number or even number.
+ * Author       :   Keerthana G Pillai
+ * Version      :   1.0
+ * Date         :   28-01-2025
+*/
+
+
+#include <stdio.h>
+
+int main() {
+    int num;
+    printf("Enter an integer");
+    scanf("%d",&num);
+    if (num%2==0){
+        printf("It is an even number");
+    }
+    else{
+        printf("It is an odd number");
+    }
+    return 0;
+}
