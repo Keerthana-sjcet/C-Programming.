@@ -4,28 +4,27 @@
  * Date         :   26-01-2025
 */
 #include <stdio.h>
-
 int main() {
-    int num1, num2;
-    char operand;
+    int num1, num2,choice;
     printf("Enter two numbers: ");
-    scanf("%d %d", &num1, &num2);
-    printf("Enter any one of +, -, *, /, %: ");
-    scanf(" %c", &operand); 
-    switch (operand) {
-        case '+':
-            printf(" %d\n", num1 + num2);
+    scanf("%d%d",&num1,&num2);
+    printf("Enter any number of 1 for addition ,2 for subtraction,3 for multiplication,4 for division,5 for modulus");
+    
+    scanf("%d",&choice);
+    switch (choice){
+        case 1:
+            printf("\n%d",num1 + num2);
             break;
-        case '-':
+        case 2:
             printf("%d\n", num1 - num2);
             break;
-        case '*':
+        case 3:
             printf(" %d\n", num1 * num2);
             break;
-        case '/':
+        case 4:
             printf("%d\n", num1 / num2);
             break;
-        case '%':
+        case 5:
             printf(" %d\n", num1 % num2);
             break;
         default:
