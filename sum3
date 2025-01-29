@@ -1,0 +1,23 @@
+/* Write a C Program to check if a given number is a strong number or not. A
+strong number is a number in which the sum of the factorial of the digits is
+equal to the number itself.
+Eg:- 145=1!+4!+5!=1+24+120=145
+*/
+
+#include <stdio.h>
+
+int main() {
+    int ognum,rem,fact=1 ,sum=0;
+    printf ("enter");
+    scanf("%d", &ognum);
+    int num2=ognum;
+    while( num2>0){
+        fact =fact*num2;
+        num2=num2-1;
+        rem=ognum%10;
+        sum=sum+rem;
+        ognum=ognum/10;
+    }
+    printf("%d",sum);
+    return 0;
+}
