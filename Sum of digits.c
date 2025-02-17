@@ -6,7 +6,6 @@
 #include <stdio.h>
 
 int main() {
-    // Write C code here
     int num,rem, sum=0;
     printf ("enter");
     scanf("%d", &num);
